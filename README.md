@@ -5,8 +5,10 @@ makeTacoFile
 java -jar .\Runnable.jar
 
 입력후 CLI 안내를 따라 관련 정보를 입력합니다
+성공하면 
+postgres_jdbc.taco 파일이 생성됩니다.
 
-create postgres_jdbc.taco
+실패하면 프로그램이 종료됩니다.
 
 
 
