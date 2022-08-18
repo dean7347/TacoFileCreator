@@ -1,3 +1,0 @@
-2022-08-18 12:59:47,239 [DEBUG] | Starting Tableau Connector Packaging Version 2.1.0
-2022-08-18 12:59:47,239 [ERROR] | Error: ..\samples\plugins\postgres_jdbc does not exist or is not a directory.
-2022-08-18 12:59:47,239 [INFO] | Validation failed. Check C:\Users\JindongKim\Documents\TacoFileCreator\packaging_logs.txt for more information.
