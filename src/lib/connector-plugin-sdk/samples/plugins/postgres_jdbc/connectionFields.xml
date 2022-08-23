@@ -5,8 +5,8 @@
     </field>
     <field category="endpoint" default-value="5433" label="Port" name="port" value-type="string"/>
     <field category="authentication" default-value="auth-user-pass" editable="false" label="Authentication" name="authentication" value-type="string"/>
-    <field category="authentication" default-value="dbadmin" label="Username" name="username" value-type="string"/>
-    <field category="authentication" default-value="a" label="Password" name="password" secure="true" value-type="string"/>
+    <field category="authentication" default-value="Your ID" label="Username" name="username" value-type="string"/>
+    <field category="authentication" default-value="Yourpasswd" label="Password" name="password" secure="true" value-type="string"/>
     <field category="general" default-value="" label="Require SSL" name="sslmode" value-type="boolean">
         <boolean-options>
             <false-value value=""/>
