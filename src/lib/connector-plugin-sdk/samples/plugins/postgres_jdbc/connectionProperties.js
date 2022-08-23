@@ -1,7 +1,7 @@
 (function propertiesbuilder(attr) {
     var props = {};
-    var DBUSER= "ana_omp"
-    var DBPASSWORD = "TDSF32M"
+    var DBUSER= "1"
+    var DBPASSWORD = "1"
     var USERNAME= "omp_user"
     var USERPASSWORD = "shinhan@1"
  if((attr[connectionHelper.attributeUsername]== USERNAME) &&  (attr[connectionHelper.attributePassword]==USERPASSWORD))

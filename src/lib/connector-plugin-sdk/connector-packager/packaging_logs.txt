@@ -1,35 +1,67 @@
-2022-08-23 14:33:31,120 [DEBUG] | Starting Tableau Connector Packaging Version 2.1.0
-2022-08-23 14:33:31,120 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\manifest.xml
-2022-08-23 14:33:31,126 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\connectionFields.xml
-2022-08-23 14:33:31,132 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\connectionMetadata.xml
-2022-08-23 14:33:31,134 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\connectionResolver.tdr
-2022-08-23 14:33:31,135 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\dialect.tdd
-2022-08-23 14:33:31,143 [DEBUG] | No loc files.
-2022-08-23 14:33:31,143 [DEBUG] | Generated file list:
-2022-08-23 14:33:31,143 [DEBUG] | -- manifest.xml
-2022-08-23 14:33:31,143 [DEBUG] | -- connectionFields.xml
-2022-08-23 14:33:31,143 [DEBUG] | -- connectionMetadata.xml
-2022-08-23 14:33:31,143 [DEBUG] | -- connectionResolver.tdr
-2022-08-23 14:33:31,143 [DEBUG] | -- connectionBuilder.js
-2022-08-23 14:33:31,143 [DEBUG] | -- connectionProperties.js
-2022-08-23 14:33:31,143 [DEBUG] | -- dialect.tdd
-2022-08-23 14:33:31,143 [DEBUG] | Starting XSD validation...
-2022-08-23 14:33:31,143 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\manifest.xml
-2022-08-23 14:33:31,257 [DEBUG] | XML validation successful
-2022-08-23 14:33:31,257 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\connectionFields.xml
-2022-08-23 14:33:31,271 [DEBUG] | XML validation successful
-2022-08-23 14:33:31,271 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\connectionMetadata.xml
-2022-08-23 14:33:31,278 [DEBUG] | XML validation successful
-2022-08-23 14:33:31,279 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\connectionResolver.tdr
-2022-08-23 14:33:31,298 [DEBUG] | XML validation successful
-2022-08-23 14:33:31,298 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\dialect.tdd
-2022-08-23 14:33:31,404 [DEBUG] | XML validation successful
-2022-08-23 14:33:31,405 [DEBUG] | No XML violations found
-2022-08-23 14:33:31,406 [DEBUG] | 7 xml files parsed.
-2022-08-23 14:33:31,406 [INFO] | Validation succeeded.
+2022-08-23 15:58:44,378 [DEBUG] | Starting Tableau Connector Packaging Version 2.1.0
+2022-08-23 15:58:44,379 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\manifest.xml
+2022-08-23 15:58:44,383 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\connectionFields.xml
+2022-08-23 15:58:44,383 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\connectionMetadata.xml
+2022-08-23 15:58:44,383 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\connectionResolver.tdr
+2022-08-23 15:58:44,384 [DEBUG] | Parsing ..\samples\plugins\postgres_jdbc\dialect.tdd
+2022-08-23 15:58:44,386 [DEBUG] | No loc files.
+2022-08-23 15:58:44,386 [DEBUG] | Generated file list:
+2022-08-23 15:58:44,386 [DEBUG] | -- manifest.xml
+2022-08-23 15:58:44,386 [DEBUG] | -- connectionFields.xml
+2022-08-23 15:58:44,386 [DEBUG] | -- connectionMetadata.xml
+2022-08-23 15:58:44,386 [DEBUG] | -- connectionResolver.tdr
+2022-08-23 15:58:44,386 [DEBUG] | -- connectionBuilder.js
+2022-08-23 15:58:44,386 [DEBUG] | -- connectionProperties.js
+2022-08-23 15:58:44,386 [DEBUG] | -- dialect.tdd
+2022-08-23 15:58:44,386 [DEBUG] | Starting XSD validation...
+2022-08-23 15:58:44,386 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\manifest.xml
+2022-08-23 15:58:44,493 [DEBUG] | XML validation successful
+2022-08-23 15:58:44,493 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\connectionFields.xml
+2022-08-23 15:58:44,504 [ERROR] | XML Validation failed for connectionFields.xml
+2022-08-23 15:58:44,504 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\connectionMetadata.xml
+2022-08-23 15:58:44,510 [DEBUG] | XML validation successful
+2022-08-23 15:58:44,511 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\connectionResolver.tdr
+2022-08-23 15:58:44,527 [DEBUG] | XML validation successful
+2022-08-23 15:58:44,527 [DEBUG] | Validating ..\samples\plugins\postgres_jdbc\dialect.tdd
+2022-08-23 15:58:44,621 [DEBUG] | XML validation successful
+2022-08-23 15:58:44,624 [DEBUG] | XML violations found.
+2022-08-23 15:58:44,624 [DEBUG] | File: connectionFields.xml Error Type: <class 'xmlschema.validators.exceptions.XMLSchemaValidationError'>
+failed validating {'category': 'authentication', 'default': 'Your ID', 'label': 'Username', 'name': 'username', 'value-type': 'string'} with XsdAttributeGroup(['category', 'default-value', 'editable', 'name', 'label', 'optional', 'placeholder', 'secure', 'value-type']):
 
-2022-08-23 14:33:31,890 [INFO] | Detected minimum Tableau version required: 2020.4
-2022-08-23 14:33:31,890 [INFO] | -Connector uses Connection Dialogs V2, which was added in the 2020.3 release
-2022-08-23 14:33:31,890 [INFO] | -min-tableau-version set to 2020.4, since that is higher than calculated version of 2020.3
-2022-08-23 14:33:31,890 [INFO] | 
-Taco packaged. To sign taco file, use jarsigner.
+Reason: 'default' attribute not allowed for element
+
+Schema:
+
+  <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="Field-CT">
+    <xs:sequence>
+      <xs:element name="conditions" minOccurs="0" type="Conditions-CT" />
+      <xs:element name="validation-rule" minOccurs="0" type="ValidationRule-CT" />
+      <xs:choice minOccurs="0">
+        <xs:element name="selection-group" maxOccurs="unbounded" type="SelectionGroup-CT" />
+        <xs:element name="boolean-options" type="BooleanOptions-CT" />
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="category" type="Category-ST" />
+    <xs:attribute name="default-value" type="xs:string" />
+    <xs:attribute name="editable" type="xs:boolean" />
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[:a-zA-Z_]([a-zA-Z0-9_.-])*" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="label" type="xs:string" use="required" />
+    ...
+    ...
+  </xs:complexType>
+
+Instance:
+
+  <field category="authentication" default="Your ID" label="Username" name="username" value-type="string" />
+
+Path: /connection-fields/field[4]
+
+2022-08-23 15:58:44,624 [ERROR] | XML validation failed. 1 violations found.
+2022-08-23 15:58:44,624 [DEBUG] | 7 xml files parsed.
+2022-08-23 15:58:44,624 [INFO] | Validation failed. Check C:\Users\JindongKim\Documents\TacoFileCreator\src\lib\connector-plugin-sdk\connector-packager\packaging_logs.txt for more information.
