@@ -1,15 +1,9 @@
 <connection-dialog class='postgres_vendor'>
   <connection-config>
-    <authentication-mode value='Basic' />
+    <authentication-mode value='PasswordOnly' />
     <authentication-options>
-      <option name="UsernameAndPassword" default="true" value="auth-user-pass" />
+      <option name="Password" default="true" value="auth-pass" />
     </authentication-options>
-    <db-name-prompt value="Database: " />
-    <has-pre-connect-database value="true" />
-    <port-prompt value="Port: " default="5432" />
-    <show-ssl-checkbox value="true" />
-    <vendor1-prompt value="Log Level: " />
-    <vendor2-prompt value="Protocol Version: " />
-    <vendor3-prompt value="Char Set: " />
+    <server-prompt enabled="false" default="127.199.199.1" value="db" />
   </connection-config>
 </connection-dialog>

@@ -8,7 +8,7 @@
          if (attr[connectionHelper.attributeAuthentication] != undefined && attr[connectionHelper.attributeAuthentication] == "some_other_kind") -->
     </authentication-options>
 
-    <db-name-prompt enabled="true" optional="true" value="@string/database_prompt/" />
+    <db-name-prompt enabled="false" optional="true" value="@string/database_prompt/" />
     <show-ssl-checkbox value="true" />
   </connection-config>
 </connection-dialog>
